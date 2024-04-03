@@ -1,0 +1,10 @@
+Server:		192.168.1.1
+Address:	192.168.1.1#53
+
+38.1.168.192.in-addr.arpa	name = zeros-Air.fios-router.home.
+
+Server:		192.168.1.1
+Address:	192.168.1.1#53
+
+38.1.168.192.in-addr.arpa	name = zeros-Air.fios-router.home.
+
