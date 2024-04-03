@@ -1,7 +1,10 @@
+#!/bin/bash
+
+
 source DontEdit.sh
 
 function scan(){
-    
+
     read -p "Auto mode or Manule: " autoOrMan
     # gets a argument in a auto array
     if [[ " ${autoOrMan[*]} " == *" ${auto} "* ]]; then
