@@ -1,8 +1,8 @@
-<img src="Python Security program.JPG" alt="Security python IMG" width="200" height="200">
+<img src="BashLock.JPG" alt="Bach lock IMG" width="200" height="200">
 
 
-# SSH Kicker
-SSH KICKER is a BASH script designed to help you manage SSH sessions on your system. It allows you to perform tasks such as checking if SSH is enabled, performing an nslookup, and kicking users off the computer by terminating their SSH sessions.
+# Bash SSH Kicker. Network scanner
+Bash Secuirty SSH Kicker is a BASH script designed to help you manage SSH sessions on your system. It allows you to perform tasks such as checking if SSH is enabled, performing an nslookup, and kicking users off the computer by terminating their SSH sessions.
 
 ## Features
 
