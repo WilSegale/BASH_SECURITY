@@ -9,15 +9,14 @@ function scan(){
     # gets a argument in a auto array
     if [[ " ${autoOrMan[*]} " == *" ${auto} "* ]]; then
         echo "Auto mode"
-        sleep 1
-        nmap --script=malware 192.168.1.1/24
+        nmap --script=malware -Pn 192.168.1.1/24
 
     # gets a argument in a manule array
     elif [[ " ${autoOrMan[*]} " == *" ${manule} "* ]]; then
         echo "Manule mode"
         read -p "Enter the ip: " ip
-        sleep 1
-        nmap --script=malware "${ip}"
+        read -p "Enter the port: " port
+        nmap --script=malware "${port}" -p "${ip}"
     else
         echo "ERROR"
         scan
