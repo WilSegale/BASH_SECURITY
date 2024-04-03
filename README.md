@@ -1,56 +1,30 @@
-<img src="BashLock.JPG" alt="Bach lock IMG" width="200" height="200">
+# SSH Management Bash Script README
 
+## Overview
+This Bash script helps manage SSH (Secure Shell) connections on computers running macOS or Linux. It offers simple options to perform tasks like checking if SSH is enabled, looking up domain names, and kicking users off the computer if needed.
 
-# Bash SSH Kicker. Network scanner
-Bash Secuirty SSH Kicker is a BASH script designed to help you manage SSH sessions on your system. It allows you to perform tasks such as checking if SSH is enabled, performing an nslookup, and kicking users off the computer by terminating their SSH sessions.
+## Prerequisites
+Before using this script, ensure the following:
+- You have permission to run commands with elevated privileges (typically, using `sudo`).
+- You can open a terminal or command prompt on your computer.
+- No prior knowledge of scripting or coding is required.
 
-## Features
+## How to Use
+1. **Open a Terminal or Command Prompt**: Locate the terminal application on your computer and open it.
 
-- Check if SSH is enabled on the system.
-- Perform an nslookup to query DNS information.
-- Terminate SSH sessions associated with specific IP addresses.
-- Ability to stop the SSH service if desired.
+2. **Run the Script**: Type `./script.sh` and press Enter. This command will execute the script.
 
-## Requirements
+3. **Follow the Prompts**: The script will ask you what you want to do. You can choose between looking up a domain name or kicking a user off the computer's SSH session.
 
-- bash
-- Linux Operating System
-- Mac Operating System
+4. **Perform Actions**: Depending on your choice, you'll either perform a DNS lookup or kick a user off the computer's SSH session. Follow the on-screen instructions for each action.
 
-## Installation
+5. **Optional: Turn Off SSH**: If you choose to kick a user and are prompted, you can decide whether to turn off SSH after kicking the user. Respond with "yes" or "no" accordingly.
 
-1. Clone the repository:
+## Important Notes
+- This script is designed to simplify SSH management tasks for users who may not be familiar with technical details.
+- If you encounter any issues or errors, seek assistance from someone with technical expertise.
+- Use caution when kicking users off SSH sessions, as it may disrupt their work.
+- The script provides a basic interface for SSH management and may require adjustments to fit specific needs or system configurations.
 
-    ```shell
-    git clone https://github.com/WilSegale/BASH_SECURITY.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd BASH_SECURITY
-    ```
-
-3. Run the bash file for linux
-    ```bash     
-    sudo bash LinuxKick.py
-    ```
-
-4. Run the bash file for MacOS
-    ```bash
-    sudo bash MacOSKick.py
-    ```
-
-## Usage
-
-1. Follow the prompts to select an action.
-2. Depending on your choice, provide necessary inputs such as domain name or IP address.
-
-## Contributing
-
-Contributions are welcome! If you have any ideas for improvement or find any issues, feel free to open an issue or create a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
+## Disclaimer
+This script is provided as-is without any guarantees. Use it responsibly and at your own risk.
