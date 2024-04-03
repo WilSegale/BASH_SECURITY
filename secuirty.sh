@@ -43,14 +43,14 @@ trap ctrl_c SIGINT
 
 function scan(){
 
-    read -p "Auto/Manule: " autoOrMan
+    read -p "Auto/Manule: " AutoOrManule
     # gets a argument in a auto array
-    if [[ " ${autoOrMan[*]} " == *" ${auto} "* ]]; then
+    if [[ " ${AutoOrManule[*]} " == *" ${auto} "* ]]; then
         echo -e "[ ${GREEN}OK${NC} ] Auto mode"
         nmap --script=malware -Pn 192.168.1.1/24
 
     # gets a argument in a manule array
-    elif [[ " ${autoOrMan[*]} " == *" ${manule} "* ]]; then
+    elif [[ " ${AutoOrManule[*]} " == *" ${manule} "* ]]; then
         echo -e "[ ${GREEN}OK${NC} ] Manule mode"
         read -p "Enter the ip: " ip
         read -p "Enter the port: " port
