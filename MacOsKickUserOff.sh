@@ -39,7 +39,7 @@ kick_user() {
         echo "SSH session associated with $ip_address has been terminated."
         echo "We have kicked $ip_address off your computer" | tee -a KICKED_USERS.txt
         read -p "Do you want to turn off ssh (yes/no)? " ssh
-        if [ "$ssh" == "yes" ]; then
+        if [ "${ssh}" == "yes" ]; then
             sudo service ssh stop
             sleep 2
             sudo service ssh status
@@ -47,7 +47,7 @@ kick_user() {
             echo "Ok SSH will still run"
         fi
     else
-        echo "No active SSH session found for IP address $ip_address"
+        echo "No active SSH session found for IP address ${ip_address}"
     fi
 }
 
