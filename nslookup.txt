@@ -8,3 +8,25 @@ Address:	192.168.1.1#53
 
 91.1.168.192.in-addr.arpa	name = raspberrypi.fios-router.home.
 
+Server:		10.11.12.1
+Address:	10.11.12.1#53
+
+Non-authoritative answer:
+*** Can't find zero: No answer
+
+Server:		10.11.12.1
+Address:	10.11.12.1#53
+
+Non-authoritative answer:
+*** Can't find zero: No answer
+
+Server:		10.11.12.1
+Address:	10.11.12.1#53
+
+** server can't find 1.1.168.192.in-addr.arpa: NXDOMAIN
+
+Server:		10.11.12.1
+Address:	10.11.12.1#53
+
+** server can't find 1.1.168.192.in-addr.arpa: NXDOMAIN
+
